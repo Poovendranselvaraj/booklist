@@ -11,6 +11,34 @@
 </head>
 <body>
     
+    <div class="navbar">
+        <h1>Booklist</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Nineteen Eighty-Four</h2>
+            <h5>George Orwell</h5>
+            <p>Nineteen Eighty-Four (also published as 1984) is a dystopian novel and cautionary tale by English writer George Orwell. It was published on 8 June 1949 by Secker & Warburg on the consequences of totalitarianism, societies and the ways in which they can be manipulated.</p>
+            <button onclick="deletebook(even)">Delete</button>        
+        </div>
+    </div>
+    
+    
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+
     <script src="script.js"></script>
 </body>
 </html>
